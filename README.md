@@ -1,41 +1,61 @@
+# 💪 Личный кабинет «Идеальное тело»
+
+**[→ Открыть демо (фронтенд)](https://DAN-Andrey.github.io/pet_project_crm)** • **[→ API демо (бэкенд)](https://твой-сервер.onrender.com)** *(добавь ссылку после деплоя)*
+
+Мобильный личный кабинет клиента студии коррекции фигуры: запись на процедуры, трекинг замеров, программа лояльности и **AI-ассистент на базе GigaChat**.
+
+![Скриншот приложения](https://via.placeholder.com/800x400?text=Добавь+сюда+скриншот+интерфейса)  
+*Замени ссылку на реальный скриншот своего приложения*
 
 ---
 
-## Что нужно сделать после вставки
+## 📱 О проекте
 
-| Шаг | Действие |
-|-----|----------|
-| 1 | Скопировать код выше |
-| 2 | Открыть `https://github.com/DAN-Andrey/pet_project_crm/blob/main/README.md` |
-| 3 | Нажать **✏️** (редактировать) |
-| 4 | Вставить код (удалить старое содержимое) |
-| 5 | Написать внизу: *"Update README with detailed project info"* |
-| 6 | Нажать **Commit changes** |
+Это полноценный **fullstack-пет-проект**, который я сделал после буткемпа Эльбрус. Клиентская часть — адаптивное SPA, серверная — REST API с PostgreSQL.
 
----
+### Что умеет приложение:
 
-## Чего не хватает (добавишь позже)
-
-1. **Скриншот** — замени строку с `via.placeholder.com` на реальное изображение (можно загрузить в папку `client/public` и сослаться как `./screenshot.png`)
-2. **Ссылка на бэкенд** — добавишь после деплоя на Render
-3. **Статус деплоя БД** — обновишь, когда поднимешь PostgreSQL в облаке
+| Функция | Описание |
+|---------|----------|
+| 🔐 **Авторизация** | JWT-токены, защищённые маршруты |
+| 📅 **Запись на процедуры** | Календарь с доступными слотами |
+| 📏 **Трекинг замеров** | Графики прогресса, история изменений |
+| 🎁 **Программа лояльности** | Баллы, скидки, уровни |
+| 🤖 **AI-ассистент** | Интеграция с GigaChat (чат-бот с советами) |
 
 ---
 
-## Почему этот README крутой
+## 🛠️ Стек технологий
 
-- ✅ **Визуальные бейджи** — сразу видно стек
-- ✅ **Таблица функций** — понятно, что умеет приложение
-- ✅ **Статус деплоя** — честно, но профессионально
-- ✅ **Инструкция по запуску** — любой может развернуть локально
-- ✅ **Структура проекта** — видна организация кода
-- ✅ **Призыв к действию** (поставить звезду) — показывает, что ты понимаешь community
+### Фронтенд
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+### Бэкенд
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### Инструменты и деплой
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 
 ---
 
-## После обновления README
+## 🚀 Запуск проекта локально
 
-1. **Закрепи** этот репозиторий на главной странице GitHub (`Customize your pins`)
-2. **Добавь демо-ссылку** в README-профиль (в репозиторий `DAN-Andrey/DAN-Andrey`)
+### Требования
+- Node.js 20+
+- PostgreSQL 15+
 
-**Напиши, когда обновишь — посмотрю, как получилось.** Если захочешь что-то поменять (цвета, эмодзи, структуру) — скажи, подредактируем.
+### Инструкция
+
+1. **Клонируй репозиторий**
+```bash
+git clone https://github.com/DAN-Andrey/pet_project_crm.git
+cd pet_project_crm
