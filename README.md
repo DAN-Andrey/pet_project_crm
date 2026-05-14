@@ -1,68 +1,67 @@
+markdown
 # 💪 Личный кабинет «Идеальное тело»
 
-Личный кабинет клиента студии коррекции фигуры: запись на процедуры, трекинг замеров, программа лояльности и **AI-ассистент на базе GigaChat**.
+**Демо:** https://DAN-Andrey.github.io/pet_project_crm
 
+Мобильный личный кабинет клиента студии коррекции фигуры: запись на процедуры, трекинг замеров, программа лояльности и AI-ассистент на базе GigaChat.
 
----
+## 🛠️ Стек
 
-## 📱 О проекте
+- **Frontend:** React, TypeScript, Redux Toolkit, Vite, React Router
+- **Backend:** Node.js, Express, PostgreSQL
+- **AI:** GigaChat API
+- **Деплой:** GitHub Pages (frontend), Render (backend), Neon (PostgreSQL)
 
-Это полноценный **fullstack-пет-проект**, который я сделал после буткемпа Эльбрус. Клиентская часть — адаптивное SPA, серверная — REST API с PostgreSQL.
+## 📱 Функциональность
 
-### Что умеет приложение:
+- Авторизация по JWT
+- Запись на процедуры (календарь с доступными слотами)
+- Трекинг замеров тела (графики прогресса)
+- Программа лояльности (баллы, уровни)
+- Чат с AI-ассистентом на базе GigaChat
 
-| Функция | Описание |
-|---------|----------|
-| 🔐 **Авторизация** | JWT-токены, защищённые маршруты |
-| 📅 **Запись на процедуры** | Календарь с доступными слотами |
-| 📏 **Трекинг замеров** | Графики прогресса, история изменений |
-| 🎁 **Программа лояльности** | Баллы, скидки, уровни |
-| 🤖 **AI-ассистент** | Интеграция с GigaChat (чат-бот с советами) |
-
----
-
-## 🛠️ Стек технологий
-
-### Фронтенд
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-
-### Бэкенд
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-### Инструменты и деплой
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
-
----
-
-## 🚀 Запуск проекта локально
+## 🚀 Запуск локально
 
 ### Требования
 - Node.js 20+
 - PostgreSQL 15+
 
-### Инструкция
+### Шаги
 
-1. **Клонируй репозиторий**
+1. Клонировать репозиторий
 ```bash
 git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
+Установить зависимости
 
-2. **Установить зависимости**
-```bash
+bash
 cd server && npm install
 cd ../client && npm install
-
-3. **Настроить окружение**
+Настроить окружение
 Создать файл .env в папке server по образцу .env.example
 
-4. **Создать базу данных**
-```bash
+Создать базу данных
+
+bash
 cd server && npm run db
+Запустить (два терминала)
+
+Терминал 1 (бэкенд):
+
+bash
+cd server && npm run dev
+Терминал 2 (фронтенд):
+
+bash
+cd client && npm run dev
+Открыть в браузере
+
+text
+http://localhost:5173
+📁 Структура
+text
+pet_project_crm/
+├── client/          # React + TypeScript
+├── server/          # Express + PostgreSQL
+├── .github/         # CI/CD (GitHub Actions)
+└── README.md
