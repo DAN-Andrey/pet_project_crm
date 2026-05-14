@@ -1,20 +1,15 @@
-# Имя нашего "конвейера"
-name: Deploy my React app to GitHub Pages
+name: Deploy React app to GitHub Pages
 
 on:
-  # Запускать автоматически при пуше в main
   push:
     branches: ['main']
-  # И дать нам кнопку для ручного запуска
   workflow_dispatch:
 
-# Разрешаем GitHub делать деплой
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Запрещаем запускать несколько деплоев одновременно
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -25,35 +20,34 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client   # ← КЛЮЧЕВАЯ СТРОКА!
     steps:
-      # 1. Скачиваем твой код из репозитория
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Устанавливаем Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*' # Используем последнюю стабильную версию
+          node-version: 'lts/*'
           cache: 'npm'
+          cache-dependency-path: './client/package-lock.json'   # ← Указываем где lock-файл
 
-      # 3. Ставим зависимости и собираем проект
-      - name: Install dependencies & Build
-        run: |
-          npm ci       # Чистая установка зависимостей (лучше, чем npm i)
-          npm run build # Команда сборки (обычно это "build")
-      
-      # 4. Готовим папку dist к загрузке
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      # 5. Загружаем папку dist в GitHub
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # ⚠️ ВНИМАНИЕ! Если у тебя папка "build", исправь здесь на './build'
+          path: './client/dist'   # ← Путь к собранной папке
 
-      # 6. Публикуем на GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
