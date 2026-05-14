@@ -39,7 +39,6 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 
 ---
 
@@ -55,3 +54,13 @@
 ```bash
 git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
+
+2. **Установить зависимости**
+cd server && npm install
+cd ../client && npm install
+
+3. **Настроить окружение**
+Создать файл .env в папке server по образцу .env.example
+
+4. **Создать базу данных**
+cd server && npm run db
