@@ -28,19 +28,20 @@ markdown
 
 ### Шаги
 
-1. Клонировать репозиторий
+## 1. Клонировать репозиторий
 ```bash
 git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
-Установить зависимости
 
+## 2. Установить зависимости
 bash
 cd server && npm install
 cd ../client && npm install
-Настроить окружение
+
+## 3. Настроить окружение
 Создать файл .env в папке server по образцу .env.example
 
-Создать базу данных
+4. Создать базу данных
 
 bash
 cd server && npm run db
