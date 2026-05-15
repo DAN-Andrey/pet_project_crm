@@ -1,65 +1,51 @@
-markdown
-# 💪 Личный кабинет «Идеальное тело»
-
-**Демо:** https://DAN-Andrey.github.io/pet_project_crm
+💪 Личный кабинет «Идеальное тело»
+Демо: https://DAN-Andrey.github.io/pet_project_crm
 
 Мобильный личный кабинет клиента студии коррекции фигуры: запись на процедуры, трекинг замеров, программа лояльности и AI-ассистент на базе GigaChat.
 
-## 🛠️ Стек
+🛠️ Стек
+Frontend: React, TypeScript, Redux Toolkit, Vite, React Router
+Backend: Node.js, Express, PostgreSQL
+AI: GigaChat API
+Деплой: GitHub Pages (frontend), Render (backend), Neon (PostgreSQL)
+📱 Функциональность
+Авторизация по JWT
+Запись на процедуры (календарь с доступными слотами)
+Трекинг замеров тела (графики прогресса)
+Программа лояльности (баллы, уровни)
+Чат с AI-ассистентом на базе GigaChat
+🚀 Запуск локально
+Требования
+Node.js 20+
+PostgreSQL 15+
+Шаги
+Клонировать репозиторий
 
-- **Frontend:** React, TypeScript, Redux Toolkit, Vite, React Router
-- **Backend:** Node.js, Express, PostgreSQL
-- **AI:** GigaChat API
-- **Деплой:** GitHub Pages (frontend), Render (backend), Neon (PostgreSQL)
-
-## 📱 Функциональность
-
-- Авторизация по JWT
-- Запись на процедуры (календарь с доступными слотами)
-- Трекинг замеров тела (графики прогресса)
-- Программа лояльности (баллы, уровни)
-- Чат с AI-ассистентом на базе GigaChat
-
-## 🚀 Запуск локально
-
-### Требования
-- Node.js 20+
-- PostgreSQL 15+
-
-### Шаги
-
-## 1. Клонировать репозиторий
-```bash
 git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
+Установить зависимости
 
-## 2. Установить зависимости
-```bash
 cd server && npm install
 cd ../client && npm install
+Настроить окружение
 
-## 3. Настроить окружение
 Создать файл .env в папке server по образцу .env.example
 
-4. Создать базу данных
-```bash
+Создать базу данных
+
 cd server && npm run db
 Запустить (два терминала)
 
 Терминал 1 (бэкенд):
 
-
 cd server && npm run dev
 Терминал 2 (фронтенд):
-
 
 cd client && npm run dev
 Открыть в браузере
 
-
 http://localhost:5173
 📁 Структура
-text
 pet_project_crm/
 ├── client/          # React + TypeScript
 ├── server/          # Express + PostgreSQL
