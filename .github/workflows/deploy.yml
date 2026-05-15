@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './client/dist'   # ← Путь к собранной папке
+          path: './client/dist'   # ← Путь к собранной папке проекта
 
       - name: Deploy to GitHub Pages
         id: deployment

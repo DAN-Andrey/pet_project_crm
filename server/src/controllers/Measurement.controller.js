@@ -96,7 +96,7 @@ class MeasurementController {
     }
 
     if (!user_id) {
-      // ← Проверяем, что передан ID клиента
+      // ← Проверяем, что передан ID клиента !
       return res.status(400).json(formatResponse(400, "Не указан ID клиента"));
     }
 

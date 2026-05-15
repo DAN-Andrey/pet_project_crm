@@ -166,7 +166,7 @@ export default function AdminPage() {
             />
           </div>
 
-          {/* Результаты поиска */}
+          {/* Результаты поиска! */}
           {results.length > 0 && showSearchResults && (
             <div className={styles.searchResults}>
               {results.map((user) => (
