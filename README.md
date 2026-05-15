@@ -1,54 +1,73 @@
-Личный кабинет "Идеальное тело"
+markdown
+# 💪 Личный кабинет «Идеальное тело»
 
-Демо: https://DAN-Andrey.github.io/pet_project_crm
+**Демо:** https://DAN-Andrey.github.io/pet_project_crm
 
 Мобильный личный кабинет клиента студии коррекции фигуры: запись на процедуры, трекинг замеров, программа лояльности и AI-ассистент на базе GigaChat.
 
-СТЕК:
-- Frontend: React, TypeScript, Redux Toolkit, Vite
-- Backend: Node.js, Express, PostgreSQL
-- AI: GigaChat API
+---
 
-ФУНКЦИОНАЛ:
+## 🛠️ Стек
+
+- **Frontend:** React, TypeScript, Redux Toolkit, Vite, React Router
+- **Backend:** Node.js, Express, PostgreSQL
+- **AI:** GigaChat API
+- **Деплой:** GitHub Pages, Render, Neon
+
+---
+
+## 📱 Функциональность
+
 - Авторизация по JWT
-- Запись на процедуры
-- Трекинг замеров
+- Запись на процедуры (календарь)
+- Трекинг замеров тела
 - Программа лояльности
 - Чат с AI-ассистентом
 
-ЗАПУСК ЛОКАЛЬНО:
+---
 
-1. Клонировать репозиторий:
+## 🚀 Запуск локально
+
+### Требования
+- Node.js 20+
+- PostgreSQL 15+
+
+### Шаги
+
+1. Клонировать репозиторий
+```bash
 git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
+Установить зависимости
 
-2. Установить зависимости:
+bash
 cd server && npm install
 cd ../client && npm install
-
-3. Настроить окружение:
+Настроить окружение
 Создать файл .env в папке server по образцу .env.example
 
-4. Создать базу данных:
+Создать базу данных
+
+bash
 cd server && npm run db
+Запустить (два терминала)
 
-5. Запустить бэкенд (терминал 1):
+Терминал 1 (бэкенд):
+
+bash
 cd server && npm run dev
+Терминал 2 (фронтенд):
 
-6. Запустить фронтенд (терминал 2):
+bash
 cd client && npm run dev
+Открыть в браузере
 
-7. Открыть в браузере:
+text
 http://localhost:5173
-
-СТРУКТУРА ПРОЕКТА:
+📁 Структура
+text
 pet_project_crm/
 ├── client/          # React + TypeScript
 ├── server/          # Express + PostgreSQL
 ├── .github/         # CI/CD
 └── README.md
-
-АВТОР:
-Андрей Данковцев – fullstack-разработчик, выпускник буткемпа Эльбрус
-Telegram: https://t.me/DAN_Andrey_13
-GitHub: https://github.com/DAN-Andrey
