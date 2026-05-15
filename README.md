@@ -34,7 +34,7 @@ git clone https://github.com/DAN-Andrey/pet_project_crm.git
 cd pet_project_crm
 
 ## 2. Установить зависимости
-bash
+```bash
 cd server && npm install
 cd ../client && npm install
 
@@ -42,22 +42,21 @@ cd ../client && npm install
 Создать файл .env в папке server по образцу .env.example
 
 4. Создать базу данных
-
-bash
+```bash
 cd server && npm run db
 Запустить (два терминала)
 
 Терминал 1 (бэкенд):
 
-bash
+
 cd server && npm run dev
 Терминал 2 (фронтенд):
 
-bash
+
 cd client && npm run dev
 Открыть в браузере
 
-text
+
 http://localhost:5173
 📁 Структура
 text
