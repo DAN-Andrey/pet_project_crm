@@ -51,3 +51,7 @@ pet_project_crm/
 ├── server/          # Express + PostgreSQL
 ├── .github/         # CI/CD (GitHub Actions)
 └── README.md
+👤 Автор
+Андрей Данковцев – fullstack-разработчик, выпускник буткемпа Эльбрус
+
+Telegram • GitHub
